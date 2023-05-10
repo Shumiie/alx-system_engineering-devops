@@ -1,35 +1,116 @@
-Writing scripts readme
+WRITING SCRIPTS
 
-0. pwd
-Write a script that prints the absolute path name of the current working directory.
+##[0. Where am I? (0-current_working_directory)]
 
-1. ls 
-Display the contents list of your current directory.
+Write a script that prints the absolute path name of a current working directory.
 
-2. cd ~
+Script: pwd 
+
+
+
+##[1. What’s in there? (1-listi)]
+
+Display the content list of your current directory.
+Script: ls
+
+
+
+
+##[2. There is no place like home (2-bring_me_home)]
+
 Write a script that changes the working directory to the user’s home directory.
 
-3. ls -l
+Script: cd ~
+
+
+
+##[3. The long format (3-listfiles)]
+
 Display current directory contents in a long format.
 
-4. ls -la
-Display current directory contents, including hidden files (starting with .). Use the long format.
+Script: ls -l
 
-5. ls -la
-Display current directory contents.Long format with user and group IDs displayed numerically. And hidden files (starting with .)
 
-6. mkdir/tmp/my_first_directory/
+
+##[4. Hidden files (4-listmorefiles)]
+
+Display the current directory contents, including hidden files (starting with .). Use the long format.
+
+Script: ls -ls
+
+
+
+##[5. I love numbers (5-listfilesdigitonly)]
+
+Display current directory contents. Long format, with user and group IDs displayed numerically and hidden files (starting with .)
+
+Script: ls -la
+
+
+
+##[6. Welcome (6-firstdirectory)]
+
 Create a script that creates a directory named my_first_directory in the /tmp/ directory.
 
-7. mv/tmp/betty/tmp/my_first_directory/
-Move the file betty from /tmp/ to /tmp/my_first_directory.
+Script: mkdir/tmp/my_first_directory
 
-8. rm/tmp/my_first_directory/betty
-Delete the file betty.
 
-9. rm -r/tmp/my_first_directory
+
+##[7. Betty in my first directory (7-movethatfile)]
+
+Move file betty from /tmp/ to /tmp/my_first_directory.
+
+Script: mv/tmp/betty/tmp/my_first_directory/betty
+
+
+
+##[8. Bye bye Betty (8-firstdelete)]
+
+Delete file betty.
+
+Script: rm/tmp/my_first_directory/betty
+
+
+
+##[9. Bye bye My first directory (9-firstdirdeletion)]
+
 Delete the directory my_first_directory that is in the /tmp directory.
 
-10. cd -
+Script: rm -r/tmp/my_first_directory
+
+##[10. Back to the future (10-back)]
 Write a script that changes the working directory to the previous one.
+Script: cd -
+
+
+
+##[11. Lists (11-lists)]
+
+Write a script that lists all the files (even ones with names beginning with a period character, which are normally hidden) in the current directory and the parent directory and the /boot directory (in this order), in long format.
+
+Script: ls -la. ../boot
+
+
+
+##[12. File type (12-file_type)]
+
+Write a script that prints the type of file name iamafile. The file will be in the /tmp directory when we will run your script.
+
+Script: file/tmp/iamafile
+
+
+
+##[13. We are symbols, and inhabit symbols (13-synbolic_link)] 
+
+Create a symbolic link to /bin/ls, named __ls__. The symbolic link should be created in the current working directory.
+
+Script: ln -s/bin/ls__ls__
+
+
+
+##[14. Copy HTML files (14-copy_html)]
+
+Create a script that copies all the HTML files from the current working directory to the parent of the working directory, but only copies files that did not exist in the parent of the working directory or were newer than the versions in the parent of the working directory.
+
+Script: cp -u*. html..
 
