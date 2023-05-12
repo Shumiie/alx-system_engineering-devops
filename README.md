@@ -1,1 +1,1 @@
-she bascics readme
+shell basics readme
