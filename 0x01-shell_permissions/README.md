@@ -60,3 +60,19 @@ Script: mkdir -m 751 my_dir
 Write a script that changes the group owner to school for the file hello. 
 Script: chgrp school hello 
 
+#[14. Owner and group (100-change_owner_and_group)]
+Write a script that changes the owner to vincent and the group owner to staff for all the files and directories 
+Script: chown vincent:staff 
+
+#[15. Symbolic links (101-symbolic_link_permissions)]
+Write a script that changes the owner and the group owner of _hello to Vincent and staff respectively. The file _hello is in the directory. The file _hello is a symbolic link.
+Script: chown -h vincent:staff _hello
+
+#[16. If only (102-if_only)]
+Write a script that changes the owner of the file hello to betty only if it is owned by the user guillaume.
+Script: chown —from=guillaume betty hello 
+
+#[17. Star Wars (103-Star_Wars)]
+Write a script that will play the StarWars IV episode in the terminal.
+Script: telnet towel.blinkerlights.n1
+
