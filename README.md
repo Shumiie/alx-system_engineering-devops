@@ -1,1 +1,1 @@
-she bascics readme
+Shell bascics readme
